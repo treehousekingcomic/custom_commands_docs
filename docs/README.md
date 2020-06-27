@@ -94,6 +94,6 @@ Commands list, delete and see help
 Some simple customization
 
 ## Change prefix
-`Syntax` \**prefix \<new_prefix>
+`Syntax` \**prefix \<new_prefix>\
 `Example` \**prefix +
 > Now your server prefix will be `+`
