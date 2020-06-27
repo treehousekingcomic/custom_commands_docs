@@ -87,7 +87,7 @@ Commands list, delete and see help
 \*\*list unapproved - Show a list of unapproved commands on this server
 > Unapproved commands are those commands made by normal server members who don't have `Manage server` permission. An Admin or server manager need to approve the command made by normal members before they can be used. Ho to approve or unapprove a command is explained below
 
-\*\*approve \<command_name> - To approve a command
+\*\*approve \<command_name> - To approve a command\
 \*\*unapprove \<command_name> - To unapprove a command
 
 # Customization
