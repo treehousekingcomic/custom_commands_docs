@@ -100,4 +100,4 @@ Some simple customization
 > Now your server prefix will be `+`
 
 ## Cool feature
-`**noprefix` After doing this if you have a command named `test` and to execute that command you dont need to type `**text` just type `test` and command will be executed. And if you again do `**noprefix` this will turn off. 
+`**noprefix` After doing this if you have a command named `test` and to execute that command you dont need to type `**test` just type `test` and command will be executed. And if you again do `**noprefix` this will turn off. 
