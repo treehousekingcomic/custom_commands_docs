@@ -104,7 +104,7 @@ You can also edit command name, custom help for command and command owner.
 `Syntax` \*\*edit command help \<command_name> Your help text\
 
 
-> Editing command name
+> Changing command owner
 
 `Syntax` \*\*edit command owner \<command_name> \<new_owner>\
 **Note :** By changing owner to someone else you will loose ability to edit/delete the command.
