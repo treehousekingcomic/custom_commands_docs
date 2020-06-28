@@ -96,17 +96,18 @@ You can also edit command name, custom help for command and command owner.
 
 > Editing command name
 
-`Syntax` \*\*edit command name \<command_previous_name> \<new_name>\
+`Syntax` \*\*edit command name \<command_previous_name> \<new_name>
 
 
 > Editing command custom help
 
-`Syntax` \*\*edit command help \<command_name> Your help text\
+`Syntax` \*\*edit command help \<command_name> Your help text
 
 
 > Changing command owner
 
-`Syntax` \*\*edit command owner \<command_name> \<new_owner>\
+`Syntax` \*\*edit command owner \<command_name> \<new_owner>
+
 **Note :** By changing owner to someone else you will loose ability to edit/delete the command.
 
 # Customization
