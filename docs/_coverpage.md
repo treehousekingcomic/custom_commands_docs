@@ -1,3 +1,4 @@
+![logo](_media/icon.png)
 # Custom Command
 > A discord bot that allow users to make custom commands per server
 
