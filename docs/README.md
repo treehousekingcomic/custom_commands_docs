@@ -1,6 +1,21 @@
 ![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue)
 ![Discord](https://img.shields.io/badge/Discord-1.3.3-green)
 
+## Index
+### Points to be noted
+- Any member can make command. But they will remain unapproved. An admin or server manager can approve the those commands. See ho to approve a command [Here](?id=management)
+- After gtting approved if command owner edit that command, the command will become unapproved if the editor dont have `Manage server` permission.
+- If a command is unapproved server managers can still execute that command to see command content to decide wheather it should be approved or not.
+- If a member have `Manage server` permission command made by him will be approved automatically after creation.
+- If you are administrator you can delete any command made by anyone. But who dont have `Administrator` permission cant delete others command untill they own that command. 
+- Server managers can unapprove any command including own and others commands.
+
+So give server manager permission to trusted.
+
+> Why restricted?
+
+There are some people who will missuse this bot to make command with pornographic content or containing bad words etc. Thats why command making is restricted.
+
 ## Available type of commands
 All the syntax is documented assuming prefix is `**`
 ### Embed
