@@ -1,7 +1,9 @@
 ![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue)
 ![Discord](https://img.shields.io/badge/Discord-1.3.3-green)
 
-## Index
+## Information
+Some information need to know before inviting the bot. 
+
 ### Points to be noted
 - Any member can make command. But they will remain unapproved. An admin or server manager can approve the those commands. See ho to approve a command [Here](?id=management)
 - After gtting approved if command owner edit that command, the command will become unapproved if the editor dont have `Manage server` permission.
@@ -102,7 +104,7 @@ Commands list, delete and see help
 \*\*list unapproved - Show a list of unapproved commands on this server
 > Unapproved commands are those commands made by normal server members who don't have `Manage server` permission. An Admin or server manager need to approve the command made by normal members before they can be used. Ho to approve or unapprove a command is explained below
 
-\*\*approve \<command_name> - To approve a command\
+\*\*approve \<command_name> - To approve a command
 
 \*\*unapprove \<command_name> - To unapprove a command
 
