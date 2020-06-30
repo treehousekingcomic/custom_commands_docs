@@ -1,5 +1,5 @@
 ![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8-blue)
-![Discord](https://img.shields.io/badge/Discord-1.3.3-green)
+![Discord](https://img.shields.io/badge/Discord-1.3.3-green)[[!invite](_media/invite.png)](https://discord.com/oauth2/authorize?client_id=724847752449753140&permissions=268815424&scope=bot)
 
 ## Information
 Some information need to know before inviting the bot. 
