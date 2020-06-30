@@ -4,7 +4,6 @@
 ## Information
 Some information need to know before inviting the bot. 
 
-### Points to be noted
 - Any member can make command. But they will remain unapproved. An admin or server manager can approve the those commands. See ho to approve a command [Here](?id=management)
 - After gtting approved if command owner edit that command, the command will become unapproved if the editor dont have `Manage server` permission.
 - If a command is unapproved server managers can still execute that command to see command content to decide wheather it should be approved or not.
