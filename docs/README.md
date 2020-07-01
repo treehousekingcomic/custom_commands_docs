@@ -128,6 +128,57 @@ You can also edit command name, custom help for command and command owner.
 
 **Note :** By changing owner to someone else you will loose ability to edit/delete the command.
 
+# Making command interactive
+Introducing variables. variables can help making command interactive with dynamic content that updates automatically.
+
+`{user}` - Will mention the command author\
+`{server}` - server name.\
+`{server_owner}` - server owner name.\
+`{server_id}` - server id.\
+`{server_logo}` - server logo url.\
+`{server_locale}` - Server current locale.\
+`{members}` - Server member count.\
+`{level}` - Server boost level.\
+`{boosts}` - Server boost count.\
+`{boosters}` - Server booster count.\
+`{text_channels}` - Server text channels count.\
+`{voice_channels}` - Server voice channels count.\
+`{total_channels}` - Server all channel count.\
+`{categories}` - Server category count.\
+`{roles}` - Server role count.\
+`{level}` - Server boost level\
+`{emojis}` - Server emoji count.\
+`{emoji_limit}` - Server maximum emoji limit.\
+`{filesize_limit}` - Server maximum file upload limit (MB).\
+
+> An example of dynamic custom command using variables.
+- Make a embed command named `serverinfo`. (\*\*embed serverinfo)
+- When it asks for title type `{server}`
+- And when asked for description type the etxt below
+
+```
+Server Name : {server}
+Id : {server_id}
+Owner : {server_owner}
+Logo url : [click here]({server_logo})
+Locale : {server_locale}
+Members : {members}
+Boost Level : {level}
+Boosts : {boosts}
+Boosters : {boosters}
+Text : {text_channels}
+Voice : {voice_channels}
+Total : {total_channels}
+Cats : {categories}
+Roles : {roles}
+Emoji :{emojis}/{emoji_limit}
+Upload limit : {filesize_limit}
+```
+
+> Running your commannd
+
+![Serverinfo](_media/serverinfo.png)
+
 # Customization
 Some simple customization
 
