@@ -6,14 +6,14 @@
 ## Information
 Some information need to know before inviting the bot. 
 
-- Any member can make command. But they will remain unapproved. An admin or server manager can approve the those commands. See ho to approve a command [Here](?id=management)
+- Any member can make commands. But they will unapproved. An admin or server manager must approve the commands to be used. See how to approve a command [Here](?id=management)
 - After gtting approved if command owner edit that command, the command will become unapproved if the editor dont have `Manage server` permission.
 - If a command is unapproved server managers can still execute that command to see command content to decide wheather it should be approved or not.
-- If a member have `Manage server` permission command made by him will be approved automatically after creation.
-- If you are administrator you can delete any command made by anyone. But who dont have `Administrator` permission cant delete others command untill they own that command. 
-- Server managers can unapprove any command including own and others commands.
+- If a member has the `Manage Server` permission command made will be approved automatically after creation.
+- If you are administrator you can delete any command made by anyone. But if you don't have the `Administrator` permission you can't delete other's command untill you own that command. 
+- Server managers can unapprove any command including their own and other's commands.
 
-So give server manager permission to trusted.
+So give the `Server Manager` permission to those trusted.
 
 > Why restricted?
 
@@ -57,7 +57,7 @@ Send a normal text.
 `Syntax ` \**edit text \<command_name> \<new_content>
 
 ### Role
-There are 3 type of role command
+There are 3 type of role commands
 
 1. giverole
 2. removerole
@@ -68,15 +68,15 @@ There are 3 type of role command
 
 `Example ` \*\*giverole dev @Developers
 
-> So when someone will execute this command like ****dev** he will get Develoeprs role is it exists.
+> So when someone executes this command, they will get Develoeprs role is it exists.
 
-Note : If after making the dev command you delete the developers role and remake you have to edit the dev command to make sure this work.
+Note : If after making the a role command and the role is deleted, either remake or edit the command to make sure it works.
 
-> Editing and role command
+> Editing a role command
 
 `Syntax ` \*\*edit role \<command_name> <role>
 
-This will change role of a command related to role.
+This will change role of a role.
 
 ## Other usefull features
 ### Poll
@@ -97,13 +97,15 @@ In place of \<question> put your question. Remeber to put " " In both side of qu
 
 `Example ` \**vote "Who should be the next admin?" 60 John, Doe, Milli
 
+There must be a minimum of 2 choices and there is a maximum of 4 choices for the Poll and Vote command.
+
 # Management
 Commands list, delete and see help
 
 \*\*delete \<command_name> - Will delete a command\
 \*\*list - Will show list of commands made on this server\
 \*\*list unapproved - Show a list of unapproved commands on this server
-> Unapproved commands are those commands made by normal server members who don't have `Manage server` permission. An Admin or server manager need to approve the command made by normal members before they can be used. Ho to approve or unapprove a command is explained below
+> Unapproved commands are those commands made by normal server members who don't have `Manage server` permission. An Admin or server manager need to approve the command made by normal members before they can be used. How to approve or unapprove a command is explained below
 
 \*\*approve \<command_name> - To approve a command
 
@@ -189,3 +191,5 @@ Some simple customization
 
 ## Cool feature
 `**noprefix toggle` After doing this if you have a command named `test` and to execute that command you dont need to type `**test` just type `test` and command will be executed. And if you again do `**noprefix toggle` this will turn off. 
+
+Revieved and editited by Ali
