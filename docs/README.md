@@ -154,8 +154,8 @@ Introducing variables. variables can help making command interactive with dynami
 > An example of dynamic custom command using variables.
 - Make a embed command named `serverinfo`. (\*\*embed serverinfo)
 - When it asks for title type `{server}`
-- And when asked for description type the etxt below
-
+- And when asked for description type the text below. 
+- You can add thumbnail (optional). or just type pass
 ```
 Server Name : {server}
 Id : {server_id}
