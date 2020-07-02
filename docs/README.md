@@ -70,13 +70,15 @@ There are 3 type of role commands
 
 > When someone executes this command, they will get the Developers role.
 
-Note : If after making the a role command and the role is deleted, either remake or edit the command to keep it valid.
+**Note:** If after making the a role command and the role is deleted, either remake or edit the command to keep it valid.
 
 > Editing a role command
 
 `Syntax ` \*\*edit role \<command_name> <role>
 
 This will change the role of a role command.
+
+**Note:** The bot's role or the bot's highest role must be higher than the role being used in commands. 
 
 ## Other usefull features
 ### Poll
@@ -128,7 +130,7 @@ You can also edit command name, custom help for command and command owner.
 
 `Syntax` \*\*edit command owner \<command_name> \<new_owner>
 
-**Note :** By changing owner to someone else you will loose ability to edit/delete the command.
+**Note:** By changing owner to someone else you will loose ability to edit/delete the command.
 
 # Making command interactive
 Introducing variables. variables can help making command interactive with dynamic content that updates automatically.
