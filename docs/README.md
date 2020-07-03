@@ -6,8 +6,8 @@
 ## Information
 Some information need to know before inviting the bot. 
 
-- Any member can make commands. But they will unapproved. An admin or server manager must approve the commands to be used. See how to approve a command [Here](?id=management)
-- After gtting approved if command owner edit that command, the command will become unapproved if the editor dont have `Manage server` permission.
+- Any member can make commands. But they will be unapproved. An admin or server manager must approve the commands to be used. See how to approve a command [Here](?id=management)
+- If a command gets edited, the command will become unapproved regardles if approved in the past unless the editor has the `Manage server` permission.
 - If a command is unapproved server managers can still execute that command to see command content to decide wheather it should be approved or not.
 - If a member has the `Manage Server` permission command made will be approved automatically after creation.
 - If you are administrator you can delete any command made by anyone. But if you don't have the `Administrator` permission you can't delete other's command untill you own that command. 
@@ -15,16 +15,16 @@ Some information need to know before inviting the bot.
 - A command can have multiple aliases. 
 - Deleting main command will delete aliases too. But deleting an alias will delete main command.
 
-So give the `Server Manager` permission to those trusted.
+Give the `Server Manager` permission to trusted people.
 
 > Why restricted?
 
-There are some people who will missuse this bot to make command with pornographic content or containing bad words etc. Thats why command making is restricted.
+There are some people who will missuse this bot to make command with pornographic content or bad words etc. Thats why command making is restricted and requires approval.
 
 ## Available type of commands
-All the syntax is documented assuming prefix is `**`
+All the syntax and examples is documented assuming prefix is `**`
 ### Embed
-Send a embeded response when command executed
+Send an embed when command is executed
 
 `Syntax` \**embed \<command_name>
 
@@ -34,17 +34,17 @@ After doing this you will be asked few questions
 > 3. **Thumbnail** image url
 > 4. **Image** url
 
-If you are not sure what are those [See this](?id=embed-components)
+If you are not sure what those are, [See this](?id=embed-components)
 
 > Editing embed
 
 `Syntax ` **edit embed \<command_name> \<component> \<new_value>
 
 `Example` \**edit embed myfirstembed `title` This is a new awesome title.
-> In place of title you can put what component you want to edit you want to edit
+> In place of title you can put what component you want to edit and the editted content
 
 #### Embed components
-> This image will describe the embed components
+> This image shows embed components
 
 ![Components](https://cdn.discordapp.com/attachments/726435336229617726/726436193394229278/Screenshot_1.png)
 ### Text
@@ -66,23 +66,25 @@ There are 3 type of role commands
 3. togglerole
 
 `Syntax ` \**\<role_command_type> \<command_name> \<role>
-> In place of **\<role_command_type>** put any of the 3 types
+> In place of **\<role_command_type>** you can put any of the 3 types
 
 `Example ` \*\*giverole dev @Developers
 
-> So when someone executes this command, they will get Develoeprs role is it exists.
+> When someone executes this command, they will get the Developers role.
 
-Note : If after making the a role command and the role is deleted, either remake or edit the command to make sure it works.
+**Note:** If after making the a role command and the role is deleted, either remake or edit the command to keep it valid.
 
 > Editing a role command
 
 `Syntax ` \*\*edit role \<command_name> <role>
 
-This will change role of a role.
+This will change the role of a role command.
+
+**Note:** The bot's role or the bot's highest role must be higher than the role being used in commands. 
 
 ## Other usefull features
 ### Poll
-Make poll in a channel so people can share their thoughts
+Make poll in the current channel
 
 `Syntax` \**poll "\<question>" choice1,choice2,choice3,choice4
 
@@ -91,15 +93,15 @@ In place of \<question> put your question. Remeber to put " " In both side of qu
 `Example ` \**poll "How is the day?" Cool, Bad, Average
 
 ### Vote
-Make vote in a channel so people can vote
+Make vote in the current channel. The difference between polls and votes is that a duration can be set for votes and the majority option is shown when the vote ends
 
 `Syntax ` \**vote "\<question>" \<duration> choice1,choice2,choice3,choice4
 
 In place of \<question> put your question. Remeber to put " " In both side of question. (Double quotes). And \<duration> is the amount of seconds it will wait before publishing result
 
-`Example ` \**vote "Who should be the next admin?" 60 John, Doe, Milli
+`Example ` \**vote "Who should be a co-owner?" 60 Ali, Joe, Chr1s
 
-There must be a minimum of 2 choices and there is a maximum of 4 choices for the Poll and Vote command.
+There is a minimum of 2 choices and a maximum of 4 choices for the Poll and Vote command.
 
 # Management
 Commands list, delete and see help
@@ -134,7 +136,7 @@ You can also edit command name, custom help for command and command owner.
 
 `Syntax` \*\*edit command owner \<command_name> \<new_owner>
 
-**Note :** By changing owner to someone else you will loose ability to edit/delete the command.
+**Note:** By changing owner to someone else you will loose ability to edit/delete the command.
 
 ## Aliasing command
 `Syntax` \*\*alias \<command_name> \<alias>\
@@ -200,9 +202,13 @@ Some simple customization
 ## Change prefix
 `Syntax` \*\*prefix \<new_prefix>\
 `Example` \*\*prefix +
-> Now your server prefix will be `+`
+> The server prefix will be `+`
 
 ## Cool feature
-`**noprefix toggle` After doing this if you have a command named `test` and to execute that command you dont need to type `**test` just type `test` and command will be executed. And if you again do `**noprefix toggle` this will turn off. 
+NoPrefix™️
+`**noprefix toggle` Toggles NoPrefix feature on/off
+When on, executing commands won't require the prefix infront of the message.
+`Example` Command `test` | Sending just `test` will execute the command.
+You can still use commands with the prefix while NoPrefix is on.
 
-Revieved and editited by Ali
+Reviewed and editited by Ali
