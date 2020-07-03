@@ -11,6 +11,8 @@
 * Management
 	* [- Command Management](?id=management)
 	* [- Editing command](?id=editing-command)
+	* [- Making command interactive](?id=making-command-interactive)
+	* [- Aliasing command](?id=aliasing-command)
 * Customization
 	* [- Change prefix](?id=change-prefix)
 	* [- Cool feature](?id=cool-feature)
