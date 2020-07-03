@@ -9,9 +9,11 @@ Some information need to know before inviting the bot.
 - Any member can make commands. But they will be unapproved. An admin or server manager must approve the commands to be used. See how to approve a command [Here](?id=management)
 - If a command gets edited, the command will become unapproved regardles if approved in the past unless the editor has the `Manage server` permission.
 - If a command is unapproved server managers can still execute that command to see command content to decide wheather it should be approved or not.
-- If a command maker has the `Manage Server` permission command made will be approved automatically after creation.
-- If you are an administrator you can delete any command made by anyone. But if you don't have the `Administrator` permission you only delete commands that you own.
-- Server managers can unapprove any command including their own.
+- If a member has the `Manage Server` permission command made will be approved automatically after creation.
+- If you are administrator you can delete any command made by anyone. But if you don't have the `Administrator` permission you can't delete other's command untill you own that command. 
+- Server managers can unapprove any command including their own and other's commands.
+- A command can have multiple aliases. 
+- Deleting main command will delete aliases too. But deleting an alias will delete main command.
 
 Give the `Server Manager` permission to trusted people.
 
@@ -104,14 +106,18 @@ There is a minimum of 2 choices and a maximum of 4 choices for the Poll and Vote
 # Management
 Commands list, delete and see help
 
-\*\*delete \<command_name> - Will delete a command\
+\*\*delete \<command_name> - Will delete a command/alias\
 \*\*list - Will show list of commands made on this server\
 \*\*list unapproved - Show a list of unapproved commands on this server
 > Unapproved commands are those commands made by normal server members who don't have `Manage server` permission. An Admin or server manager need to approve the command made by normal members before they can be used. How to approve or unapprove a command is explained below
 
-\*\*approve \<command_name> - To approve a command
-
+\*\*approve \<command_name> - To approve a command\
 \*\*unapprove \<command_name> - To unapprove a command
+
+## Aliasing a command
+`Syntax` \*\*alias \<command_name> \<alias>\
+`Example` \*\*alias serverinfo si\
+> `serverinfo` command now aliased to `si`. And `**serverinfo` and `**si` will be same now. Deleting an alias is same as deleting a command.
 
 ## Editing command
 You can also edit command name, custom help for command and command owner.
@@ -132,7 +138,14 @@ You can also edit command name, custom help for command and command owner.
 
 **Note:** By changing owner to someone else you will loose ability to edit/delete the command.
 
-# Making command interactive
+## Aliasing command
+`Syntax` \*\*alias \<command_name> \<alias>\
+If you want 2 command do the same work alias the main command to another one.
+
+`Example` \*\*alias serverinfo si\
+Now `serverinfo` command has been aliases to `si`. `**si` and `**serverinfo` will do same. Any changes made on serverinfo command will be applied to all its aliases. A command can have unlimited aliases.
+
+## Making command interactive
 Introducing variables. variables can help making command interactive with dynamic content that updates automatically.
 
 `{user}` - Will mention the command author\
@@ -153,7 +166,7 @@ Introducing variables. variables can help making command interactive with dynami
 `{level}` - Server boost level\
 `{emojis}` - Server emoji count.\
 `{emoji_limit}` - Server maximum emoji limit.\
-`{filesize_limit}` - Server maximum file upload limit (MB).\
+`{filesize_limit}` - Server maximum file upload limit (MB).
 
 > An example of dynamic custom command using variables.
 - Make a embed command named `serverinfo`. (\*\*embed serverinfo)
