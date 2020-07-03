@@ -12,6 +12,8 @@ Some information need to know before inviting the bot.
 - If a member has the `Manage Server` permission command made will be approved automatically after creation.
 - If you are administrator you can delete any command made by anyone. But if you don't have the `Administrator` permission you can't delete other's command untill you own that command. 
 - Server managers can unapprove any command including their own and other's commands.
+- A command can have multiple aliases. 
+- Deleting main command will delete aliases too. But deleting an alias will delete main command.
 
 So give the `Server Manager` permission to those trusted.
 
@@ -102,14 +104,18 @@ There must be a minimum of 2 choices and there is a maximum of 4 choices for the
 # Management
 Commands list, delete and see help
 
-\*\*delete \<command_name> - Will delete a command\
+\*\*delete \<command_name> - Will delete a command/alias\
 \*\*list - Will show list of commands made on this server\
 \*\*list unapproved - Show a list of unapproved commands on this server
 > Unapproved commands are those commands made by normal server members who don't have `Manage server` permission. An Admin or server manager need to approve the command made by normal members before they can be used. How to approve or unapprove a command is explained below
 
-\*\*approve \<command_name> - To approve a command
+\*\*approve \<command_name> - To approve a command\
+\*\*unapprove \<command_name> - To unapprove a command\
 
-\*\*unapprove \<command_name> - To unapprove a command
+## Aliasing a command
+`Syntax` \*\*alias \<command_name> \<alias>\
+`Example` \*\*alias serverinfo si\
+> `serverinfo` command now aliased to `si`. And `**serverinfo` and `**si` will be same now. Deleting an alias is same as deleting a command.
 
 ## Editing command
 You can also edit command name, custom help for command and command owner.
