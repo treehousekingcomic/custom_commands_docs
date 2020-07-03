@@ -164,7 +164,7 @@ Introducing variables. variables can help making command interactive with dynami
 `{level}` - Server boost level\
 `{emojis}` - Server emoji count.\
 `{emoji_limit}` - Server maximum emoji limit.\
-`{filesize_limit}` - Server maximum file upload limit (MB).\
+`{filesize_limit}` - Server maximum file upload limit (MB).
 
 > An example of dynamic custom command using variables.
 - Make a embed command named `serverinfo`. (\*\*embed serverinfo)
