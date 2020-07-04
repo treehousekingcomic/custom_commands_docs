@@ -76,7 +76,7 @@ There are 3 type of role commands
 
 > Editing a role command
 
-`Syntax ` \*\*edit role \<command_name> <role>
+`Syntax ` \*\*edit role \<command_name> \<role>
 
 This will change the role of a role command.
 
