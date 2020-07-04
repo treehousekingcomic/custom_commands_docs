@@ -151,7 +151,6 @@ Introducing variables. variables can help making command interactive with dynami
 `{user}` - Will mention the command author\
 `{user_id}` - Message author id\
 `{user_avatar}` - Message author avatar url\
-`{user}` - Will mention the command author\
 `{server}` - server name.\
 `{server_owner}` - server owner name.\
 `{server_id}` - server id.\
