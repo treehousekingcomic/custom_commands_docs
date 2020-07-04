@@ -149,6 +149,9 @@ Now `serverinfo` command has been aliases to `si`. `**si` and `**serverinfo` wil
 Introducing variables. variables can help making command interactive with dynamic content that updates automatically.
 
 `{user}` - Will mention the command author\
+`{user_id}` - Message author id\
+`{user_avatar}` - Message author avatar url\
+`{user}` - Will mention the command author\
 `{server}` - server name.\
 `{server_owner}` - server owner name.\
 `{server_id}` - server id.\
@@ -167,6 +170,27 @@ Introducing variables. variables can help making command interactive with dynami
 `{emojis}` - Server emoji count.\
 `{emoji_limit}` - Server maximum emoji limit.\
 `{filesize_limit}` - Server maximum file upload limit (MB).
+
+## Custom variable
+> To make own custom variable\
+**variable add \<name> \<value>
+
+> Edit existing custom variable\
+**variable add \<name> \<value>\
+
+
+> View value of a custom variable\
+**variable view \<name>\
+
+
+> List of all custom variable\
+**variable list\
+
+
+> Delete a custom variable\
+**variable remove \<name>\
+
+`Note : ` Making a variable already available in pre defined variables will override that.
 
 > An example of dynamic custom command using variables.
 - Make a embed command named `serverinfo`. (\*\*embed serverinfo)
