@@ -175,7 +175,7 @@ Introducing variables. variables can help making command interactive with dynami
 **variable add \<name> \<value>
 
 > Edit existing custom variable\
-**variable add \<name> \<value>\
+**variable edit \<name> \<new_value>\
 
 
 > View value of a custom variable\
