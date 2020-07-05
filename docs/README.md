@@ -134,11 +134,14 @@ You can also edit command name, custom help for command and command owner.
 **Note:** By changing owner to someone else you will loose ability to edit/delete the command.
 
 ## Aliasing command
-`Syntax` \*\*alias \<command_name> \<alias>\
-If you want 2 command do the same work alias the main command to another one.
+Aliasing a command will make it so executing the alias will execute the command.
 
-`Example` \*\*alias serverinfo si\
-Now `serverinfo` command has been aliases to `si`. `**si` and `**serverinfo` will do same. Any changes made on serverinfo command will be applied to all its aliases. A command can have unlimited aliases.
+`Syntax` \*\*alias \<command_name> \<alias>\
+
+> `Example` \*\*alias serverinfo si\
+The `serverinfo` command has been aliases to `si`. `**si` and `**serverinfo` will do same. Any changes made on serverinfo command will be applied to all its aliases. A command can have unlimited aliases.
+
+**Note:** You cannot edit a command alias, to have an alias do something else you must first delete the alias.
 
 ## Making command interactive
 Introducing variables. variables can help making command interactive with dynamic content that updates automatically.
