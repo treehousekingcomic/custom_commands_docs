@@ -114,11 +114,6 @@ Commands list, delete and see help
 \*\*approve \<command_name> - To approve a command\
 \*\*unapprove \<command_name> - To unapprove a command
 
-## Aliasing a command
-`Syntax` \*\*alias \<command_name> \<alias>\
-`Example` \*\*alias serverinfo si\
-> `serverinfo` command now aliased to `si`. And `**serverinfo` and `**si` will be same now. Deleting an alias is same as deleting a command.
-
 ## Editing command
 You can also edit command name, custom help for command and command owner.
 
