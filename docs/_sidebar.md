@@ -15,5 +15,5 @@
 	* [- Making command interactive](?id=making-command-interactive)
 	* [- Custom Variable](?id=custom-variable)
 * Customization
-	* [- Change prefix](?id=change-prefix)
+	* [- Changing prefix](?id=change-prefix)
 	* [- Cool feature](?id=cool-feature)
